@@ -42,5 +42,5 @@ class RegistrationAPIView(generics.GenericAPIView):
                 "User": serializer.data}, status=status.HTTP_201_CREATED
                 )
         
-        return Response(status=status.HTTP_400_BAD_REQUEST)
-        #return Response({"Errors": serializers.errors}, status=status.HTTP_400_BAD_REQUEST)
+        #return Response(status=status.HTTP_400_BAD_REQUEST)
+        return Response({"Errors": serializers.errors}, status=status.HTTP_400_BAD_REQUEST)
