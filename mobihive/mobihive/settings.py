@@ -40,6 +40,13 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'api',
+    #social
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    
+    #providers
+    'allauth.socialaccount.providers.facebook',
 ]
 AUTH_USER_MODEL = 'api.User'
 
