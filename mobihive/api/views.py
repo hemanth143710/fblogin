@@ -44,3 +44,8 @@ class RegistrationAPIView(generics.GenericAPIView):
         
         #return Response(status=status.HTTP_400_BAD_REQUEST)
         return Response({"Errors": serializers.errors}, status=status.HTTP_400_BAD_REQUEST)
+    
+class HomeAPIView(generics.GenericAPIView):
+    
+    def get(self):
+        return Response('ok')    

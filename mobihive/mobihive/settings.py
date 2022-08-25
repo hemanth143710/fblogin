@@ -48,6 +48,12 @@ INSTALLED_APPS = [
     #providers
     'allauth.socialaccount.providers.facebook',
 ]
+#facebook app id
+#1549684892116087
+
+#facebook app secret key
+#5bdce7c1cbb89579e1e05b5aaf729043
+
 AUTH_USER_MODEL = 'api.User'
 
 REST_FRAMEWORK = {
